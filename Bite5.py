@@ -4,13 +4,23 @@ NAMES = ['arnold schwarzenegger', 'alec baldwin', 'bob belderbos',
          'al pacino', 'brad pitt', 'matt damon', 'brad pitt']
 
 
+
 def dedup_and_title_case_names(names):
     """Should return a list of names, each name appears only once"""
-    pass
+    NAMES2 = []
+    for item in names:
+        if item.title() in NAMES2:
+            pass
+        else:
+            NAMES2.append(item.title())
+    return NAMES2
 
+print(dedup_and_title_case_names(NAMES))
 
 def sort_by_surname_desc(names):
     names = dedup_and_title_case_names(names)
+
+
     # ...
 
 
